@@ -1,0 +1,14 @@
+<?php
+/**
+ * Plugin Name: Reading-writing-restapi
+ * Description:  this plugin create a post and load a post 
+ */
+
+
+ function add_js_script(){
+
+    wp_enqueue_script('abapguru/myjshandle'
+    ,plugin_dir_url(__FILE__).'/js/main.js');
+
+ }
+ add_action('wp_enqueue_scripts','add_js_script');
